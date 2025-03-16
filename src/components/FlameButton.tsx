@@ -2,7 +2,7 @@ import React from "react";
 
 const FlameButton: React.FC = () => {
   const handleClick = () => {
-    window.location.href = "https://dashboard.hoteach.com";
+    window.location.href = "https://app.hoteach.com";
   };
 
   return (
