@@ -132,7 +132,11 @@ const Index = () => {
                 <FadeIn key={testimonial.name} delay={200 * (index + 1)}>
                   <div className="glass-card rounded-xl p-6">
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover"
+                      />
                       <div>
                         <h4 className="font-bold">{testimonial.name}</h4>
                         <p className="text-sm text-muted-foreground">
@@ -168,7 +172,7 @@ const Index = () => {
                   size="xl"
                   className="mx-auto mb-8"
                 >
-                  Click the Big Flaming Button
+                  Get Started Now
                 </FlameButton>
                 <div className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   <p className="mb-2">
@@ -222,16 +226,19 @@ const Index = () => {
 
 const features = [
   {
+    image: "/people/2.png",
     title: "Personalized Learning Paths",
     description:
       "AI-powered recommendations tailored to your goals, skill level, and preferred learning style.",
   },
   {
+    image: "/people/3.png",
     title: "Project-Based Learning",
     description:
       "Learn by building real-world projects that strengthen your portfolio and practical skills.",
   },
   {
+    image: "/people/4.png",
     title: "Supportive Community",
     description:
       "Connect with like-minded learners and mentors who can help guide your journey.",
@@ -262,12 +269,14 @@ const steps = [
 
 const testimonials = [
   {
+    image: "/people/4.png",
     name: "Sarah Johnson",
     role: "Web Developer",
     quote:
       "HotTeach's personalized approach helped me focus on exactly what I needed to learn. I went from beginner to professional in just 6 months!",
   },
   {
+    image: "/people/3.png",
     name: "James Wilson",
     role: "Data Scientist",
     quote:

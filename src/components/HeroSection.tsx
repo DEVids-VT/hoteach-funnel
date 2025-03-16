@@ -50,7 +50,7 @@ const HeroSection = () => {
                   size="xl"
                   className="w-full sm:w-auto"
                 >
-                  Click the Big Flaming Button
+                  Get Started Now
                 </FlameButton>
               </div>
             </FadeIn>
@@ -58,10 +58,17 @@ const HeroSection = () => {
             <FadeIn delay={800}>
               <div className="mt-8 flex items-center gap-6">
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="w-10 h-10 rounded-full border-2 border-white bg-gray-200"
+                  {[
+                    "/people/2.png",
+                    "/people/3.png",
+                    "/people/4.png",
+                    "/people/5.png",
+                  ].map((src, index) => (
+                    <img
+                      key={index}
+                      src={src}
+                      alt={`User ${index + 1}`}
+                      className="w-10 h-10 rounded-full border-2 border-white object-cover"
                     />
                   ))}
                 </div>
