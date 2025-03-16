@@ -166,14 +166,7 @@ const Index = () => {
                   Join thousands of learners who have accelerated their skills
                   with our personalized learning paths.
                 </p>
-                <FlameButton
-                  onClick={handleGetStarted}
-                  variant="secondary"
-                  size="xl"
-                  className="mx-auto mb-8"
-                >
-                  Get Started Now
-                </FlameButton>
+                <FlameButton />
                 <div className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   <p className="mb-2">
                     One-time purchase: <span className="font-bold">$20</span>

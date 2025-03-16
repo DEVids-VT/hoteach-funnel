@@ -44,14 +44,7 @@ const HeroSection = () => {
 
             <FadeIn delay={600}>
               <div className="flex flex-col sm:flex-row gap-4">
-                <FlameButton
-                  onClick={handleGetStarted}
-                  variant="secondary"
-                  size="xl"
-                  className="w-full sm:w-auto"
-                >
-                  Get Started Now
-                </FlameButton>
+                <FlameButton />
               </div>
             </FadeIn>
 
