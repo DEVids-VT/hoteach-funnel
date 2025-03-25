@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -52,7 +51,14 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-8">
           {isLoggedIn ? (
             <>
-              <NavLink to="/dashboard" title="Dashboard" />
+              <a 
+                href="https://devids.eu/hoteach" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm font-medium transition-colors hover:text-hotteach-red"
+              >
+                Learn More
+              </a>
               <NavLink to="/projects" title="Projects" />
               <NavLink to="/courses" title="Courses" />
               <NavLink to="/community" title="Community" />
@@ -68,9 +74,14 @@ const Header = () => {
 
         <div className="flex items-center gap-3">
           {isLoggedIn ? (
-            <FlameButton variant="primary" size="sm">
-              My Account
-            </FlameButton>
+            <a 
+              href="https://devids.eu/hoteach" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-hotteach-yellow text-hotteach-dark hover:shadow-lg hover:brightness-105 rounded-lg transition-all duration-300 ease-out text-sm"
+            >
+              Learn More
+            </a>
           ) : (
             <FlameButton 
               as={Link} 

@@ -19,7 +19,7 @@ const Index = () => {
     } else if (stage === "preferences") {
       navigate("/onboarding");
     } else if (stage === "complete") {
-      navigate("/dashboard");
+      window.location.href = "https://devids.eu/hoteach";
     }
   }, [stage, navigate]);
 
@@ -166,7 +166,11 @@ const Index = () => {
                   Join thousands of learners who have accelerated their skills
                   with our personalized learning paths.
                 </p>
-                <FlameButton />
+                <a href="https://devids.eu/hoteach" target="_blank" rel="noopener noreferrer" className="inline-block">
+                  <button className="px-6 py-3 bg-hotteach-red hover:bg-hotteach-red/90 text-white font-bold rounded-lg transition-colors">
+                    Learn More
+                  </button>
+                </a>
                 <div className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   <p className="mb-2">
                     One-time purchase: <span className="font-bold">$20</span>

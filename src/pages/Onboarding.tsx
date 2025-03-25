@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import FlameButton from "@/components/FlameButton";
@@ -51,8 +50,8 @@ const Onboarding = () => {
         duration: 3000,
       });
       
-      // Navigate to dashboard
-      navigate("/dashboard");
+      // Redirect to external site
+      window.location.href = "https://devids.eu/hoteach";
     }, 2000);
   };
 
